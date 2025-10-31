@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Global Health Alliance UW-Madison</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <style>
+      html,
+      body {
+        font-family: "Open Sans", sans-serif;
+      }
+
+      body {
+        border: 5px solid black;
+      }
+
+      header {
+        background-color: #192d86;
+        border-bottom: 5px solid black;
+      }
+
+      /* Override Bulma's defaults */
+      .navbar {
+        background: transparent;
+      }
+      .navbar-menu {
+        justify-content: center;
+        background: transparent;
+      }
+      .navbar-item {
+        color: #fff;
+      }
+      .navbar-item:hover {
+        background-color: transparent !important;
+        color: #fff !important;
+      }
+
+      main {
+        background-color: #fff8ea;
+        min-height: 80vh;
+      }
+
+      /* Override Bulma's defaults */
+      .column.text-left {
+        padding-left: 20rem; /* adjust as needed */
+      }
+
+      .footer {
+        background-color: #192d86;
+        border-top: 5px solid black;
+        color: #fff;
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+      }
+      .footer p {
+        color: #fff;
+      }
+
+      .leadership-section {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+      }
+
+      .leader-row {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        margin-bottom: 3rem;
+        padding: 1.5rem;
+      }
+
+      .leader-image {
+        flex-shrink: 0;
+        width: 180px;
+      }
+
+      .leader-image img {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      .leader-info {
+        flex: 1;
+      }
+
+      .leader-name {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #363636;
+        margin-bottom: 0.25rem;
+      }
+
+      .leader-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #4a4a4a;
+        margin-bottom: 1rem;
+      }
+
+      .leader-bio {
+        color: #4a4a4a;
+        line-height: 1.6;
+      }
+
+      /* Reverse layout for alternating rows */
+      .leader-row.reverse {
+        flex-direction: row-reverse;
+      }
+
+      /* Responsive design */
+      @media (max-width: 768px) {
+        .leader-row,
+        .leader-row.reverse {
+          flex-direction: column;
+          text-align: center;
+          gap: 1.5rem;
+        }
+
+        .leader-image {
+          width: 150px;
+        }
+
+        .leader-image img {
+          width: 150px;
+          height: 150px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="has-text-centered p-4">
+      <figure class="image is-64x64 is-inline-block">
+        <img src="Images/ghalogo.png" alt="logo" />
+      </figure>
+      <h1 class="title has-text-white">Global Health Alliance UW-Madison</h1>
+
+      <nav class="navbar">
+        <div class="navbar-menu is-active is-flex is-justify-content-center">
+          <a class="navbar-item has-text-white" href="#">Home</a>
+          <a class="navbar-item has-text-white" href="#">What We Do</a>
+          <a class="navbar-item has-text-white" href="#">Meet The Team</a>
+          <a class="navbar-item has-text-white" href="#">Calendar</a>
+          <a class="navbar-item has-text-white" href="#">Get Involved</a>
+          <a id="signin-link" class="navbar-item has-text-white" href="#"
+            >Sign In</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="section">
+      <section class="section">
+        <div class="leadership-section">
+          <h1 class="title has-text-centered mb-6">
+            2025-2026 Leadership Team
+          </h1>
+
+          <div class="leader-row">
+            <div class="leader-image">
+              <img src="images/ghalogo.png" alt="Leader name" />
+            </div>
+            <div class="leader-info">
+              <div class="leader-name">Tola Klabough</div>
+              <div class="leader-title">Co-President</div>
+              <p class="leader-bio">
+                Hi! My name is Tola and I’m a senior studying Global Health and
+                Political Science, with certificates in Health Policy and
+                Environmental Studies. Outside of GHA, I am an Undergraduate
+                Research Assistant with the Climate Solutions for Health Lab,
+                which is run by Dr. Jonathan Patz! I also work as a Student Lead
+                at the SubZero Ice Center located in the Bakke. After
+                graduation, I hope to combine my passions for climate advocacy
+                and health policy. Outside of school and work, I enjoy doing
+                yoga and baking!
+              </p>
+            </div>
+          </div>
+
+          <div class="leader-row reverse">
+            <div class="leader-image">
+              <img src="images/ghalogo.png" alt="Leader name" />
+            </div>
+            <div class="leader-info">
+              <div class="leader-name">Morgan Ramsey</div>
+              <div class="leader-title">Co-President</div>
+              <p class="leader-bio">INSERT BIO</p>
+            </div>
+          </div>
+
+          <div class="leader-row">
+            <div class="leader-image">
+              <img src="images/ghalogo.png" alt="Leader name" />
+            </div>
+            <div class="leader-info">
+              <div class="leader-name">Sarah Koker</div>
+              <div class="leader-title">Local Partnership Co-Director</div>
+              <p class="leader-bio">INSERT BIO</p>
+            </div>
+          </div>
+
+          <div class="leader-row reverse">
+            <div class="leader-image">
+              <img src="images/ghalogo.png" alt="Leader name" />
+            </div>
+            <div class="leader-info">
+              <div class="leader-name">Naureen Kamal</div>
+              <div class="leader-title">Local Partnership Co-Director</div>
+              <p class="leader-bio">INSERT BIO</p>
+            </div>
+          </div>
+          <div class="leader-row">
+            <div class="leader-image">
+              <img src="images/ghalogo.png" alt="Leader name" />
+            </div>
+            <div class="leader-info">
+              <div class="leader-name">Shelby Kail</div>
+              <div class="leader-title">Forum Co-Director</div>
+              <p class="leader-bio">INSERT BIO</p>
+            </div>
+          </div>
+
+          <div class="leader-row reverse">
+            <div class="leader-image">
+              <img src="images/ANYA.png" alt="Leader name" style="object-position: center 10%;" />
+            </div>
+            <div class="leader-info">
+              <div class="leader-name">Anya Mullen</div>
+              <div class="leader-title">Forum Co-Director</div>
+              <p class="leader-bio">I’m a sophomore studying Health Promotion & Health Equity, with certificates in Health Policy and Global Health. After graduation, I hope to work in the field of Public Health, particularly in the area of program planning and evaluation. Alongside being a part of GHA, I also work as a small group tutor for Biology 101 through GUTS, and do remote marketing and administrative work for a Pilates studio in my hometown. Outside of work and campus involvements, I love working out (especially lifting), cooking, and spending time with friends and family!
+
+</p>
+            </div>
+          </div>
+
+          <div class="leader-row">
+            <div class="leader-image">
+              <img src="images/ghalogo.png" alt="Leader name" />
+            </div>
+            <div class="leader-info">
+              <div class="leader-name">Ava Parsons</div>
+              <div class="leader-title">Campaigns Co-Director</div>
+              <p class="leader-bio">
+     
+              </p>
+            </div>
+          </div>
+
+          <div class="leader-row reverse">
+            <div class="leader-image">
+              <img src="images/SYDNEY.png" alt="Leader name" />
+            </div>
+            <div class="leader-info">
+              <div class="leader-name">Sydney Weber</div>
+              <div class="leader-title">Campaigns Co-Director</div>
+              <p class="leader-bio">Hi, my name’s Sydney Weber and I’m a junior majoring in Global Health. I’m especially interested in healthcare administration and health equity and hope to go to graduate school after graduation. On campus, I’m a Student Research Assistant for the UW Health Department of Emergency Medicine and I also volunteer at SSM Health St. Mary’s Hospital in the ED.
+
+</p>
+            </div>
+          </div>
+
+          <div class="leader-row">
+            <div class="leader-image">
+              <img src="images/ghalogo.png" alt="Leader name" />
+            </div>
+            <div class="leader-info">
+              <div class="leader-name">Jess Rosu</div>
+              <div class="leader-title">Community Building Director</div>
+              <p class="leader-bio">INSERT BIO</p>
+            </div>
+          </div>
+
+          <div class="leader-row reverse">
+            <div class="leader-image">
+              <img src="images/GABI.png" alt="Leader name" style="object-position: center 10%;" />
+            </div>
+            <div class="leader-info">
+              <div class="leader-name">Gabi Beaman</div>
+              <div class="leader-title">Finance Director</div>
+              <p class="leader-bio">Hi! My name is Gabi and I’m a senior studying Global Health with certificates in Health Policy and Leadership on the pre-Healthcare Administration track. Around campus, I’m involved as the Co-President for Crafting for Care, a Community Resource Navigator with the Center for Patient Partnerships, a Wisconsin Admissions Volunteer, and previously, an Undergraduate Researcher with the TinyEarth Lab.
+
+</p>
+            </div>
+          </div>
+          <div class="leader-row">
+            <div class="leader-image">
+              <img src="images/ghalogo.png" alt="Leader name" />
+            </div>
+            <div class="leader-info">
+              <div class="leader-name">Paige Meyer</div>
+              <div class="leader-title">Communications Director </div>
+              <p class="leader-bio">INSERT BIO</p>
+            </div>
+          </div>
+        </div>
+
+
+        
+        </div>
+
+        
+      </section>
+    </main>
+
+    <!-- Sign In Modal -->
+    <div id="signin-modal" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content has-text-centered">
+        <div class="box">
+          <form id="sign_in">
+            <h2 class="title is-4 mb-4">Sign In</h2>
+            <div class="field">
+              <p class="control has-icons-left has-icons-right">
+                <input
+                  class="input"
+                  type="email"
+                  placeholder="Email"
+                  id="email_"
+                />
+                <span class="icon is-small is-left"
+                  ><i class="fa-solid fa-envelope"></i
+                ></span>
+              </p>
+            </div>
+            <div class="field">
+              <p class="control has-icons-left">
+                <input
+                  class="input"
+                  type="password"
+                  placeholder="Password"
+                  id="password_"
+                />
+                <span class="icon is-small is-left"
+                  ><i class="fas fa-lock"></i
+                ></span>
+              </p>
+            </div>
+            <p
+              id="signin_error"
+              class="is-hidden has-text-weight-bold has-text-danger"
+            >
+              email or password are incorrect
+            </p>
+            <div class="buttons is-centered">
+              <button class="button is-link is-light">Sign In</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer has-text-centered">
+      <p>&copy; 2025 Global Health Alliance UW-Madison</p>
+    </footer>
+
+    <script>
+      const r_e = (id) => document.querySelector(`#${id}`);
+
+      const signinModal = r_e("signin-modal");
+      const closeModal = (modal) => modal.classList.remove("is-active");
+
+      // open modal when clicking the navbar link
+      r_e("signin-link").addEventListener("click", () =>
+        signinModal.classList.add("is-active")
+      );
+
+      // close modal (background or X button)
+      document.querySelectorAll(".modal").forEach((modal) => {
+        modal
+          .querySelector(".modal-background")
+          .addEventListener("click", () => closeModal(modal));
+        modal
+          .querySelector(".modal-close")
+          .addEventListener("click", () => closeModal(modal));
+      });
+
+      // sign in form submit
+      r_e("sign_in").addEventListener("submit", (e) => {
+        e.preventDefault();
+        const email = r_e("email_").value;
+        const pass = r_e("password_").value;
+        auth
+          .signInWithEmailAndPassword(email, pass)
+          .then(() => {
+            r_e("sign_in").reset();
+            signinModal.classList.remove("is-active");
+            configure_messages_bar(`Welcome back ${auth.currentUser.email}!`);
+          })
+          .catch(() => r_e("signin_error").classList.remove("is-hidden"));
+      });
+    </script>
+  </body>
+</html>
