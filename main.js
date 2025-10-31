@@ -77,3 +77,30 @@ document.addEventListener("DOMContentLoaded", () => {
 window.addEventListener("popstate", () => {
   loadPage(window.location.pathname);
 });
+
+// === slideshow for the "What We Do" page ===
+document.addEventListener("DOMContentLoaded", () => {
+  const slideshows = document.querySelectorAll(".slideshow");
+
+  slideshows.forEach(slideshow => {
+    const slides = slideshow.querySelectorAll("img");
+    const prevBtn = slideshow.querySelector(".prev");
+    const nextBtn = slideshow.querySelector(".next");
+    let index = 0;
+
+    function showSlide(n) {
+      slides.forEach(slide => slide.classList.remove("active"));
+      slides[n].classList.add("active");
+    }
+
+    prevBtn.addEventListener("click", () => {
+      index = (index - 1 + slides.length) % slides.length;
+      showSlide(index);
+    });
+
+    nextBtn.addEventListener("click", () => {
+      index = (index + 1) % slides.length;
+      showSlide(index);
+    });
+  });
+});
